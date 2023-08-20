@@ -19,7 +19,9 @@ function list(text) {
     // console.log();
     const count = entry.childElementCount;
     p.innerText = `${count + 1} ${text}`;
+    p.classList.add('my-4', 'text-xl', 'w-[200px]', 'bg-red-400', 'rounded-sm');
     entry.appendChild(p);
+
 }
 function rec() {
     const base = parseFloat(document.getElementById('rbase').value);
