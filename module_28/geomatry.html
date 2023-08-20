@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="flex flex-col lg:flex-row mt-9">
+            <div class="flex-1 grid grid-cols-1 gap-6 lg:grid-cols-3">
+                <div id='box' class="card w-80 h-[500px] bg-base-100 shadow-xl p-7">
+                    <figure><img class="object-fill" src="geometry-genius-resources-main/images/triangle.png"
+                            alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="tt" class="text-center text-3xl">triangle</h2>
+                        <p class="text-center">Area (A) = 0.5 x b x h</p>
+                        <div id="triangle_section" class="flex space-x-5">
+                            <input class="w-[90px]" type="number" id="base"> sm
+                            <input class="w-[90px]" type="number" id="height"> cm
+                        </div>
+                        <h2>Area : <span id="result">00</span> cm^2</h2>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary" onclick="tr()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="box" class="card w-80 h-[500px] bg-base-100 shadow-xl p-7">
+                    <figure><img class="object-fill" src="geometry-genius-resources-main/images/parallelogram.png"
+                            alt="Shoes" /></figure>
+                    <div class="card-body ">
+                        <h2 id="paral" class="text-center text-3xl">parallelogram</h2>
+                        <p>Area : b x h</p>
+                        <div id="triangle_section" class="flex space-x-5">
+                            <input class="w-[90px]" type="number" id="pbase"> sm
+                            <input class="w-[90px]" type="number" id="pheight"> cm
+                        </div>
+                        <h2>Area : <span id="presult">00</span> cm^2</h2>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary" onclick="pr()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id='box' class="card w-80 h-[500px] bg-base-100 shadow-xl p-7">
+                    <figure><img class="object" src="geometry-genius-resources-main/images/rectangle.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 id="rect" class="text-center text-3xl">rectangle</h2>
+                        <p>Area : w x l</p>
+                        <div id="triangle_section" class="flex space-x-5">
+                            <input class="w-[90px]" type="number" id="rbase"> sm
+                            <input class="w-[90px]" type="number" id="rheight"> cm
+
+                        </div>
+                        <h2>Area : <span id="rresult">00</span> cm^2</h2>
+                        <div class="card-actions justify-center">
+                            <button class="btn btn-primary" onclick="rec()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="List" class="w-[300px] h-[900px] shadow-md text-center  text-3xl">Area Calculator</div>
+            </div>
+        </div>
+
+    </main>
+    <script src="geomatry.js"></script>
+</body>
+
+</html>
